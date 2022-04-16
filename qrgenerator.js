@@ -5,6 +5,10 @@ function createQR(filename, data) {
   try {
     QR.toFile("images/" + filename + ".png", data, {
       width: 500,
+      color: {
+        dark: "#14b4e6",
+        light: "#fff",
+      },
     });
   } catch (e) {
     console.log("C'è un errore!");
